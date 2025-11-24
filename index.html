@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Trouble Maker Area</title>
+    <style>
+        /* Reset CSS dasar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
 
+        /* Mengatur latar belakang gelap agar sesuai dengan estetika logo */
+        body {
+            background-color: #0f0f0f; /* Warna hitam pekat */
+            background-image: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 100%); /* Sedikit gradasi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Wadah untuk logo */
+        .logo-container {
+            /* Anda bisa mengatur lebar maksimal di sini */
+            max-width: 500px; 
+            padding: 20px;
+            /* Efek opsional: bayangan lembut di belakang logo agar lebih "pop-up" */
+            filter: drop-shadow(0 10px 20px rgba(220, 20, 60, 0.2)); 
+            transition: transform 0.3s ease;
+        }
+
+        /* Efek hover opsional: sedikit membesar saat kursor diarahkan */
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        /* Mengatur gambar agar responsif */
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="nama-file-gambar-anda.png" alt="Logo Trouble Maker Area dengan Tengkorak dan Pistol">
+    </div>
+
+</body>
+</html>
